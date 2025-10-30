@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useCart } from "@/context/CartContext";
-import { Tv, Clock, User, Star } from "lucide-react";
+import { Tv, Clock, User } from "lucide-react";
 import { Course } from "@/types/courses";
 import { renderStars } from "@/lib/utils/renderStars";
 

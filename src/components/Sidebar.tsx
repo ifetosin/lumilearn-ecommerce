@@ -87,7 +87,7 @@ export default function Sidebar() {
                 aria-current={isActive ? "page" : undefined}
               >
                 <div className="flex items-center gap-2 w-full">
-                  <Icon className="w-6 h-6 flex-shrink-0" style={isActive ? { color: "#1C9647" } : undefined} />
+                  <Icon className="w-6 h-6 shrink-0" style={isActive ? { color: "#1C9647" } : undefined} />
                   <span className="truncate text-sm font-normal flex-1">{item.name}</span>
                   {showBadge && cartCount > 0 && <span className="bg-[#1C9647] text-white text-xs font-medium rounded-2xl w-5 h-5 flex items-center justify-center">{cartCount > 9 ? "9+" : cartCount}</span>}
                 </div>
