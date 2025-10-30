@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* ====== Custom Root Variables ====== */
+:root {
+  --background: #f6f7f8;
+  --foreground: #141414;
+
+  /* Connect Geist font variables from layout.tsx */
+  --font-geist: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* ====== Base Styles ====== */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist), sans-serif;
+}
+
+/* ====== Form Styles ====== */
+.input {
+  @apply w-full border rounded px-3 py-2 mt-1;
+}
+
+.error {
+  @apply text-red-500 text-sm mt-1;
+}
